@@ -43,10 +43,10 @@
 
 ## Server
 
-1. yarn init
+```bash
+yarn init
+npx typescript --init
 
-2. npx typescript --init
+yarn add express http-status-codes pino @typegoose/typegoose mongoose express-async-errors zod zod-express-middleware argon2 jsonwebtoken cookie-parser mongoose-slug-generator nanoid busboy cors helmet @mantine/form
 
-3. yarn add express http-status-codes pino @typegoose/typegoose mongoose express-async-errors zod zod-express-middleware argon2 jsonwebtoken cookie-parser mongoose-slug-generator nanoid busboy cors helmet @mantine/form
-
-4. yarn add typescript ts-node-dev pino-pretty @types/express @types/jsonwebtoken @types/cookie-parser @types/busboy @types/cors -D
+yarn add typescript ts-node-dev pino-pretty @types/express @types/jsonwebtoken @types/cookie-parser @types/busboy @types/cors -D
