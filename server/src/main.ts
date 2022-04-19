@@ -10,6 +10,7 @@ import { connectDatabase, disconnectDatabase } from './utils/database'
 import { CORS_ORIGIN } from './constants'
 import userRoute from './modules/user/user.routes'
 import authRoute from './modules/auth/auth.route'
+import videoRoute from './modules/videos/video.route'
 import deserializeUser from './middlewares/deserializeUser'
 
 const PORT = Number(process.env.PORT) || 3000
@@ -29,6 +30,7 @@ app.use(deserializeUser)
 
 app.use('/api/user', userRoute)
 app.use('/api/auth', authRoute)
+app.use('/api/videos', videoRoute)
 
 const server = app.listen(PORT, async () => {
   await connectDatabase()
